@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+body{
+    font-family: "Inter";
+    font-size: 2rem;
+    color: hsl(240, 38%, 20%);
+    font-weight: 500;
+}
+
+.mobile{
+    display: none;
+}
+.desk{
+    padding: 4rem;
+}
+
+.profile{
+    width: 70%;
+    position: relative;
+    left: 10rem;
+}
+
+.full-profile{
+    display: flex;
+    align-items: center;
+}
+
+.show{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}
+
+.fp-b{
+    display: none;
+}
+
+.pre-nxt{
+    border: 1px solid white;
+    border-radius: 1.56rem;
+    padding: .7rem;
+    width: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    top: -2.5rem;
+    box-shadow: 10px 10px 5px 0px rgba(241, 236, 236, 0.8);
+}
+.pre-nxt img{
+    cursor: pointer;
+}
+
+.img{
+    background-image: url("./images/pattern-bg.svg"), url("./images/pattern-curve.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    padding: 1rem;
+}
+.img img{
+    width: 100%;
+    border-radius: 0.625rem;
+    box-shadow: 10px 10px 5px 0px rgba(255, 255, 255, 0.1);
+}
+
+.profile{
+    background-image: url("./images/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.name-prof{
+    display: flex;
+}
+.name{
+    font-weight: 700;
+    margin-right: 1rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 900px){
+    .profile{
+        left: 7rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    body{
+        font-size: 1.3rem;
+    }
+    main{
+        margin: 2rem .5rem;
+    }
+    .desk{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .profile{
+        width: auto;
+        left: 0;
+    }
+    .full-profile{
+        flex-direction: column;
+    }
+    .profile-content{
+        text-align: center;
+    }
+    .name-prof{
+        flex-direction: column;
+        align-items: center;
+    }
+    .name{
+        margin: 0;
+    }
+}
